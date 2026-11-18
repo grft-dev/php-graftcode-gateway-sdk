@@ -1,2 +1,7 @@
-# php-graftcode-gateway-sdk
-php-graftcode-gateway-sdk
+# graftcode-gateway-sdk
+
+This package provides SDK for Graftcode Gateway.
+
+Requirements:
+
+- PHP FFI extension enabled

@@ -1,0 +1,49 @@
+{
+  "name": "graftcode/graftcode-php-protocol",
+  "description": "",
+  "type": "library",
+  "require": {
+    "php": "^8.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": ">=12.0"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "GraftcodeProtocol\\": "GraftcodeProtocol/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "Tests/"
+    }
+  },
+  "scripts": {
+    "install-local": [
+      "git fetch --all --prune ",
+      "git add .",
+      "git stash",
+      "git merge origin/develop",
+      "rm -rf vendor composer.lock .phpunit.result.cache",
+      "composer clear-cache",
+      "composer install --no-cache"
+    ],
+    "tests": [
+      "vendor/bin/phpunit"
+    ]
+  },
+  "authors": [
+    {
+      "name": "graftcode"
+    }
+  ],
+  "keywords": [
+    "graftcode",
+    "graftcode-php-protocol",
+    "php"
+  ],
+  "prefer-stable": true,
+  "minimum-stability": "stable",
+  "version": "1.9.4"
+}

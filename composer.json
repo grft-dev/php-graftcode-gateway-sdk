@@ -1,0 +1,33 @@
+{
+  "name": "graftcode/graftcode-gateway-sdk",
+  "version": "1.5.1",
+  "description": "This package provides SDK for Graftcode Gateway",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "php": "^7.4 || ^8.0",
+    "ext-ffi": "*",
+    "graftcode/hypertube-php-sdk": "3.2.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Graftcode\\Gateway\\": "src/Graftcode/Gateway/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Graftcode S.A.",
+      "email": "support@graftcode.com",
+      "homepage": "https://www.graftcode.com"
+    }
+  ],
+  "keywords": [
+    "Graftcode"
+  ],
+  "support": {
+    "docs": "https://www.graftcode.com",
+    "email": "support@graftcode.com"
+  },
+  "prefer-stable": true,
+  "minimum-stability": "stable"
+}
